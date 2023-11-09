@@ -1,0 +1,28 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: yellow;
+
+}
+
+.list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+    list-style: none;
+}
+
+.category-button {
+
+    background-color: transparent;
+    border: none;
+    color: burlywood;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
