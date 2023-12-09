@@ -1,18 +1,22 @@
-import './styles.css';
-
-const Item = ({ title, description, price, image }) => {
-    return (
-    <div className="card-container">
-        <h6 className="card-title">{title}</h6> 
-        <img src={image} alt={title} width={70} /> 
-        <div className="card-description">
-            <p>{description}</p>
-        </div>
-
-        <p>${price}</p>
-    </div>
-
-    );
+import './item.css'
+const Item = ({ id, name, price, category, img, stock, description }) => {
+  return <article className="card__item">
+    <header className='card__title'>
+        <h3>{name}</h3>
+    </header>
+    <picture className='card__picture'>
+        <img src={img} alt={name} />
+    </picture>
+    <section className='card__body'>
+        <p>Precio: ${price}</p>
+        <p>Categoría: {category}</p>
+        <p>Stock disponible: {stock}</p>
+        
+    </section>
+    <footer className='card__footer'>
+        <button className='card__footer--button'>Ver detalle</button>
+    </footer>
+  </article>;
 };
 
-export default Item
+export default Item;

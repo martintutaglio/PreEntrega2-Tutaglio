@@ -1,28 +1,24 @@
-.navbar-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: yellow;
-
-}
-
-.list-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
-    width: 100%;
-    list-style: none;
-}
-
-.category-button {
-
-    background-color: transparent;
+.nav__container {
+  
+    background-image: linear-gradient(180deg, #2B3499 18%, rgba(43, 52, 153, 0.902) 48%, #2B3499 77%);
+    height: 76px;
+  
+  }
+  .nav__btn{
     border: none;
-    color: burlywood;
-    font-size: 1.5rem;
+    background-color: initial;
+    color: white;
+    font-size: 1.2rem;
     font-weight: 600;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease-in-out;
-}
+    transition: all 250ms linear;
+  }
+  
+  .nav__btn:hover{
+    color: rgb(94, 174, 208);
+    
+    font-size: 1.3rem;
+    
+  
+    border-bottom: 4px solid rgb(94, 174, 208); ;
+  
+  }

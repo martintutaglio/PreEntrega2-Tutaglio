@@ -1,0 +1,32 @@
+.cartWidgets__container{
+    position: relative;
+    cursor: pointer;
+
+}
+.cartWidgets__icon {
+    color: white;
+    font-size: 1.2rem;
+
+}
+.cartWidgets__number {
+    color: white;
+    position: absolute ;
+    top: -15px;
+    right: -10px;
+    font-size: 1.2rem;
+
+    
+}
+.cart_cardFloat {  
+    position: absolute ;
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    right: 80px;
+    z-index: 1;
+    width: 25vw
+    
+}
+.cart_cardFloat_img {
+    width:100% !important;
+}

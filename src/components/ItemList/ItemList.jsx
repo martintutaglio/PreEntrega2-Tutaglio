@@ -1,31 +1,20 @@
 import { Link } from "react-router-dom";
 import Item from "../Item/Item";
-import './styles.css';
-
-const ItemList = ({productList}) => {
-    return (
-        <div className= "item-list-container">
-
-            {productList.map((product) => (
-                <Link to={'item/' + product.id} key={product.id}>
-                
-                    <Item
-                        
-                        title= {product.title}
-                        description={product.description}
-                        price={product.image}
-                        image={product.image}
-                    
-                    />
-                </Link>
-
-            ))
-            
-            }
-
+import "./ItemList.css";
+const ItemList = ({ products }) => {
+  
+  return (
+    <div className="itemList">
+      {products.map((prod) => (
+        <div key={prod.id}>
+          <Link className="notLinkStyle"  to={`/item/${prod.id}`} >
+          <Item  {...prod} />
+          </Link>
+          
         </div>
-
-    );
+      ))}
+    </div>
+  );
 };
 
 export default ItemList;
