@@ -1,10 +1,10 @@
 import React  from 'react';
 import { useContext } from "react";
 import "./Cart.css";
-import { CartContext } from "../../Context";
+import { CartContext } from "../../Context/CartContext";
 import { Link } from "react-router-dom";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import CartItem from "../CartItem";
+import CartItem from "../CartItem/CartItem";
 
 const Cart = () => {
   const { cart, clearCart, totalQuantity, total } = useContext(CartContext);

@@ -1,6 +1,6 @@
-import { useFormik } from "formik"
+
 import { Button, Col, Container, Form, Row } from "react-bootstrap"
-import * as Yup from 'yup';
+
 
 
 const CheckoutForm = ({handleSubmitCheck}) => { 

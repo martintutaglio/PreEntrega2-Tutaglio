@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { CartContext } from "./CartContext";
-import Swal from "sweetalert2";
+
 
 
 export const CartProvider = ({ children }) => {

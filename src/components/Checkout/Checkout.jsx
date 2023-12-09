@@ -1,12 +1,12 @@
 import { useState,useContext, useEffect } from "react"
 import CheckoutForm from "../CheckoutForm/CheckoutForm"
-import {CartContext} from '../../Context'
+import {CartContext} from '../../Context/CartContext'
 
 
 import {db} from '../../services/Firebase/FirebaseConfig'
-import { Timestamp, collection, documentId, getDocs, query, where, writeBatch,addDoc } from "@firebase/firestore";
+import { Timestamp, collection, documentId, getDocs, query, where, writeBatch,addDoc } from "Firebase/firestor";
 import { Row, Spinner } from "react-bootstrap";
-import Swal from "sweetalert2";
+
 import { Link } from "react-router-dom";
 
 

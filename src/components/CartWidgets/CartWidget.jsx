@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import './CartWidgets.css'
-import { CartContext } from '../../Context'
+import { CartContext } from '../../Context/CartContext'
 import { Link } from 'react-router-dom'
 import { Card } from 'react-bootstrap'
 
