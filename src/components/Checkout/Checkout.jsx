@@ -4,10 +4,11 @@ import {CartContext} from '../../Context/CartContext'
 
 
 import {db} from '../../services/Firebase/FirebaseConfig'
-import { Timestamp, collection, documentId, getDocs, query, where, writeBatch,addDoc } from "Firebase/firestor";
+import { Timestamp, collection, documentId, getDocs, query, where, writeBatch,addDoc } from "firebase/firestore";
 import { Row, Spinner } from "react-bootstrap";
 
 import { Link } from "react-router-dom";
+
 
 
 
@@ -59,7 +60,7 @@ const createOrder = async ({name,phone,email}) => {
         }else {
             console.error('hay productos que están Fuera de Stock');
             console.table(outOfStock);
-            Swal.fire('Hay productos que están Fuera de Stock')
+            
         }
 
     }catch(error){
@@ -78,7 +79,7 @@ const handleSubmitCheck = (data) => {
 
 useEffect(() => {
    if(orderId){
-    Swal.fire(`Orden registrada correctamente. \n El id de su orden es: ${orderId}`)
+    
    }
 
   

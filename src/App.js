@@ -53,7 +53,7 @@ const firebaseConfig = {
 };
 
 // Inicializa Firebase con tu configuración
-firebase.initializeApp(firebaseConfig);
+
 
 
 export default App;

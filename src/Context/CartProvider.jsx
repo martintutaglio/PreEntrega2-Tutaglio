@@ -54,7 +54,7 @@ export const CartProvider = ({ children }) => {
   }
   const msgSinStock= ()=>{
     
-    Swal.fire('No hay Suficiente Stock ')
+    
   }
   const removeItem = (itemId) => {
     const cartUpdate = cart.filter((prod) => prod.id !== itemId);

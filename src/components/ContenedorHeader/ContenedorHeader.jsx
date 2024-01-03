@@ -13,7 +13,7 @@ const ContenedorHeader = () => {
 
 
   const particlesInit = useCallback(async engine => {
-      await loadFull(engine);
+      await (engine);
 }, []);
 
 const particlesLoaded = useCallback(async container => {
@@ -27,12 +27,6 @@ const particlesLoaded = useCallback(async container => {
     <div className="container-title"><h1>Web Design Ideas</h1></div>
     <div className="particles-background">
       
-      <Particles
-        id="tsparticles"
-        options={particlesConfig}
-        init={particlesInit}
-        loaded={particlesLoaded}
-      />
       
     </div>
     

@@ -6,34 +6,20 @@ import { Button, Col, Container, Form, Row } from "react-bootstrap"
 const CheckoutForm = ({handleSubmitCheck}) => { 
 
 
-const formik = useFormik({
+const formik = ({
   initialValues:{
     name: '',
     phone: '',
     email :'',
     repeatEmail:''
   },
-validationSchema: Yup.object({
-  name: Yup.string().min(3, "Muy corto").max(50,"Muy Largo").required('El nombre es obligatorio'),
-  email:Yup.string().email('Formato de correo electrónico no válido').required('El correo electrónico es obligatorio').oneOf([Yup.ref('repeatEmail'), null], 'Los correos electrónicos deben coincidir'),
-    repeatEmail: Yup.string()
-      .oneOf([Yup.ref('email'), null], 'Los correos electrónicos deben coincidir')
-      .required('Repetir correo electrónico es obligatorio'),
-      phone: Yup.string().matches(/^\+(?:[0-9] ?){6,14}[0-9]$/, 'Formato de teléfono no válido Ejem +54 123 456 7890').required('El teléfono es obligatorio'),
-}),
+
 
   onSubmit:(formData)=>{
   const {repeatEmail,...filteredFormData} = formData
   handleSubmitCheck(filteredFormData)
   }
 })
-
-
-
-
- 
-
-
 
 
 
